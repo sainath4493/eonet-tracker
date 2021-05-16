@@ -5,17 +5,15 @@ const LocationInfoBox = ({ id, title, date }) => {
       <h3>Event Location Info</h3>
       <ul>
         <li>
-          ID: <strong>{id}</strong>
+          <strong> ID:</strong> {id}
         </li>
         <li>
-          TITLE: <strong>{title}</strong>
+          <strong>TITLE:</strong>
+          {title}
         </li>
         <li>
-          LAST UPDATED ON:{" "}
-          <strong>
-            {dateConst.getDate()}/{dateConst.getMonth()}/
-            {dateConst.getFullYear()}
-          </strong>
+          <strong>LAST UPDATED ON: </strong>
+          {dateConst.getDate()}/{dateConst.getMonth()}/{dateConst.getFullYear()}
         </li>
       </ul>
     </div>
